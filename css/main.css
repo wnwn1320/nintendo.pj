@@ -1,0 +1,546 @@
+@charset "utf-8";
+
+@import "reset.css";
+@import "common.css";
+@import "./layout.css";
+@import "./responsive.css";
+
+/* header */
+header {
+    height: 75px;
+    border-bottom: 1px solid #dddddd;
+    z-index: 999;
+}
+header h1 {
+    width: 17%;
+    background: #e60012;
+    text-align: center;
+    z-index: 9999;
+    float: left;
+}
+header h1 a {
+    display: block;
+    height: 74px;
+    background: url(../img/icons/logo_nintendo_red.gif) no-repeat center;
+    font-size: 0;
+    text-indent: -9999px;
+    z-index: 999;
+}
+
+nav > ul > li{
+    margin-top: 5px;
+    font-size: 16px;
+    height: 70px;
+    border-left: 1px solid #ddd;
+    line-height: 70px;
+    text-align: center;
+    float: left;
+    width: 14%;
+    position: relative;
+    
+}
+nav > ul > li:last-child {
+    border-right: 1px solid #ddd;
+}
+nav > ul > li:hover > a {
+    color: red;
+}
+nav > ul > li > ul  {
+    background: #f2f2f2;
+    position: absolute;
+    line-height: 30px;
+    display: none;
+    text-align-last: left;
+    font-size: 14px;
+    width: 100%;
+    
+    
+    
+}
+nav > ul > li > ul > li {
+    margin: 10px 0px 10px 20px;
+    
+    
+}
+nav > ul > li > ul > li:hover {
+    color: red;
+    
+}
+nav > ul >li:hover > ul {
+    display: block;
+    
+    
+}
+header .btn_eshop {
+    position: absolute;
+    top: 0px;
+    width: 160px;
+    height: 75px;
+    border-left: 1px solid #d9d9d9;
+    background: #fe7c0a url(../img/icons/btn_head_eshop.gif) no-repeat center;
+    font-size: 0;
+    z-index: 99999;
+}
+.btn_eshop_m {
+    position: absolute;
+    top: 0;
+    width: 160px;
+    z-index: 9999;
+    text-indent: -9999px;
+    height: 70px;
+    font-size: 0;
+}
+header  .btn_search {
+    position: relative;
+    top: -40px;
+    right: -160px;
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    font-size: 0;
+    z-index: 9999;
+}
+header .btn_search:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 27px;
+    height: 27px;
+    margin: -13px 0 0 -13px;
+    background: url(../img/icons/search.png) no-repeat left top;
+    text-indent: 0;
+} 
+/* main banner */
+.main-banner {
+    width: 1800px;
+    overflow: hidden;
+}
+.banner-container {
+    height: 600px;
+}
+.banner-container img {
+    height: 600px;
+    width: 1800px;
+    margin-right: -5px;
+}
+.scroll {
+    width: 14400px;
+    animation: scroll 30s infinite  ;
+}
+@keyframes scroll {
+    0% {
+        margin-left: 0;
+    }
+    12.5% {
+        margin-left: -2150px;
+    }
+    25% {
+        margin-left: -3950px;
+    }
+    37.5% {
+        margin-left: -5750px;
+    }
+    50% {
+        margin-left: -7550px;
+    }
+    62.5% {
+        margin-left: -9350px;
+    }
+    75% {
+        margin-left: -11150px;
+    }
+    87.5% {
+        margin-left: -12950px;
+    }
+    100% {
+        /* margin-left: -9350px; */
+    }
+
+
+}
+
+/* news  */
+.sw-cate h2,span {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.sw-item {
+    position: relative;
+}
+.sw-cate .icon-plus {
+    position: absolute;
+    background: url(../img/icons/icon_more.png) no-repeat center;
+    width: 26px;
+    top: 100px;
+    right: 0px;
+    height: 26px;
+    display: inline-block;
+}
+.sw-item .sw-desc {
+    padding: 5px 2px 15px;
+}
+.sw-item {
+    padding-top: 90px;
+}
+.sw-item .cover {
+    overflow: hidden;
+}
+.sw-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+.sw-item img:hover {
+    transform: scale(1.1);
+}
+.sw-desc p {
+    /* border: 1px solid #000; */
+    font-size: 0.9rem;
+    white-space: nowrap;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sw-desc span {
+    font-size: 0.3rem;
+}
+/* num-perchase */
+
+.num-perchase img {
+    width: 100%;
+}
+/* game title */
+.game-title {
+    width: 1100px;
+}
+.game-title .game-desc .pk-icon,.dl-icon {
+    float: right;
+    display: inline-block;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: #e60012;
+    font-size: 5px;
+    color: #fff;
+    font-weight: 300;
+    margin-top: -0px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+.game-title .game-cate h2,h4{
+    display: inline-block;
+    padding: 60px 0px 40px;
+}
+.game-title .game-cate h4 {
+    font-weight: 400;
+}
+.game-desc {
+    padding: 10px 2px 15px;
+}
+.game-desc .nin-title {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color:#e70012;
+    padding-bottom: 9px;
+}
+.game-desc h5 {
+    padding-bottom: 20px;
+    font-size: 1rem;
+}
+.game-desc p {
+    margin-top: 10px;
+    font-size: 10px;
+    color: #737373;
+    display: inline-block;
+    line-height: 20px;
+}
+.game-item .cover {
+    display: block;
+}
+
+.game-item .cover {
+    overflow: hidden;
+}
+.game-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+.game-item img:hover {
+    transform: scale(1.1);
+}
+.game-item.icon-new:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    width: 64px;
+    height: 64px;
+    background: url(../img/icons/ico_sw_list_new.png) no-repeat;
+    text-indent: -9999px;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+}
+.lang-icon {
+    background: url(../img/icons/ico_lang_foreign.png);
+    width: 60px;
+    /* border: 1px solid #000; */
+    position: absolute;
+    height: 36px;
+    background-position: 0 -116px;
+    bottom: 38px;
+    right:19px;  
+}
+
+.game-item {
+    position: relative;
+}
+/* guides */
+.guides .grid-item {
+width: 33.3333%;
+margin-bottom: -30px;
+padding: 0px 7px 0px 7px;
+}
+.guides .grid-item img {
+    width: 105%;
+    height: 70%;
+}
+/* down-vers */
+.down-vers{
+    text-align: center;
+    
+}
+.down-vers h1 {
+    font-size: 1.6rem;
+}
+.down-vers .purchase i{
+    padding-top: 10px;
+    color: #737373;
+    background: #eee;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.down-vers .purchase a {
+    margin: 15px 5px 5px 5px;
+    line-height: 1.2;
+    font-size: 16px;  
+    vertical-align: middle;
+    /* padding-left: 30px; */
+    
+}
+.down-vers ul {
+    font-size: 0;
+    margin-top: 40px;
+}
+.down-vers li {
+    display: inline-block;
+    padding: 5px 10px 10px 0px;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #333;
+}
+.down-vers li.pur-method {
+    text-align: left;
+}
+.down-vers li:after {
+    content: '';
+    display: inline-block;
+    background: url(../img/icons/banner_arrow.png) no-repeat;
+    width: 50px;
+    height: 45px;
+    margin-left: 10px;
+    vertical-align: bottom;
+
+}
+.down-notice {
+    display: inline-block;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.down-notice .down-desc {
+    margin-top: 20px;
+    font-size: 12px;
+}
+.down-plus:after{
+    content: '';
+    width: 12px;
+    height: 10px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    background: url(../img/icons/icon_plus.png) no-repeat;
+}
+.down-notice .dote:before {
+    content: '';
+    width: 3px;
+    height: 3px;
+    margin-left: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    background: red;
+}
+/* down-nav  */
+.down-nav {
+    margin-top: 30px;
+    position: relative;
+    padding: 35px 0;
+    background: #e60012;
+}
+.down-nav .btn-go-top {
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    font-size: 0;
+}
+.down-nav .btn-go-top:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 4px;
+    width: 12px;
+    height: 7px;
+    background: url(../img/icons/btn_switch_main_gotoTop.png);
+}
+.logo-red {
+    display: inline-block;
+    width: 190px;
+    height: 29px;
+    font-size: 0;
+    background: url(../img/icons/logo_nintendo_red.gif) no-repeat;
+}
+/* bottom-area*/
+
+.bottom-area .sns li {
+    float: left;
+    margin-left: 30px;
+}
+.bottom-area .sns li a {
+    width: 60px;
+    height: 60px;
+} 
+.sns-link .youtube {
+    background-position: 0 -160px;
+}
+.sns-link .kakaostory {
+    background-position: -70px -160px;
+}
+.sns-link .facebook {
+    background-position: -140px -160px;
+}
+.sns a, .bottom-btn a {
+    display: inline-block;
+    background: url(../img/icons/bottom.png) no-repeat;
+    font-size: 0;
+}
+.bottom-btn .my-nintendo {
+    margin-left: 30px;
+    width: 370px;
+    height: 60px;
+}
+.bottom-btn .amiibo {
+    width: 370px;
+    height: 60px;
+    margin-left: 20px;
+    background: url(../img/icons/btn_footer_amiibo.png) no-repeat;
+}
+.bottom-nav {
+    text-align: center;
+    margin: 60px auto 0 auto;
+    font-size: 14px;
+    margin-bottom: 30px;
+    /* transform: translate(25%); */
+}
+.bottom-nav > ul{
+    overflow: hidden;
+    display: block;
+    
+}
+.bottom-nav > ul > li  {
+    float: left;
+    margin-left: 120px;
+}
+.bottom-nav > ul > li a {
+    color: #737373;
+}
+.bottom-nav > ul > li > a{
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    color: #111;
+}
+.bottom-nav > ul > li > a:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 18px;
+    height: 3px;
+    background: #e60012;
+    transform: translateX(-50%);
+}
+/* footer  */
+footer {
+    padding: 30px 0;
+    background: #f5f5f5;
+    height: 150px;
+}
+footer .inner {
+    position: relative;
+}
+footer .footer-desc {
+    display: inline-block;
+    font-size: 14px;
+    color: #737373;
+    vertical-align: top;
+}
+footer .footer-desc a + a {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #737373;
+}
+footer .footer-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    font-size: 14px;
+    color: #737373;
+    line-height: 150%;
+
+}
+footer .footer-info .bl {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+footer address {
+    font-size: 14px;
+    line-height: 24px;
+    color: #737373;
+}
+footer address span {
+    display: inline-block;
+    margin-right: 15px;
+}

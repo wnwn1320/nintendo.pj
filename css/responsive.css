@@ -1,0 +1,64 @@
+@charset "utf-8";
+@media (max-width: 1240px) {
+    .box_search {
+        padding: 20px 0;
+    }
+}
+@media (max-width: 1220px) {
+    header {
+        background: #e60012;
+    }
+    header {
+        display: block;
+        width: auto;
+        padding-left: 20px;
+    }
+    header h1 a {
+        width: 130px;
+        height: 60px;
+        background: url(../img/icons/logo_nintendo_red.gif) no-repeat center;
+        background-size: 94px 23px;
+    }
+    header nav {
+        display: none;
+    }
+    .btn_gnb {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+    .btn_eshop {
+        display: none;
+    }
+    .btn_eshop_m {
+        display: block;
+        position: absolute;
+        background:#fe7c0a;
+        margin-left: 980px;
+        width: 10px;
+        
+    }
+    .btn_eshop_m::before {
+        content: '';
+        margin-left: 30px;
+        display: block;
+        width: 55px;
+        height: 55px;
+        background:#fe7c0a;
+        background: url(../img/icons/btn_head_eshop_m.png) no-repeat;
+    }
+    .btn_eshop_m {
+        display: block;
+    }
+    .btn_gnb:before {
+        content: '';
+        display: block;
+        top: 20px;
+        margin: 0px 400px 0;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../img/icons/btn_gnb_m.png) no-repeat;
+        background-size: 40px auto;
+        z-index: 999999;
+    }
